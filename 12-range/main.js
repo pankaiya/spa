@@ -1,7 +1,8 @@
 $(function(){
-  var $range = $('input[type="range"]');
-  var $txtAge = $('#age');
-  $range.change(function(){
-    $txtAge.html($range.val());
+  var a=$("#range"),
+  n=$("#age");
+  n.html(a.val()),
+  a.change(function(){
+    n.html(a.val())
   })
 });
